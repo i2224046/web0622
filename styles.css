@@ -105,12 +105,14 @@
 
     /* Figmaのカードタイプ */
     .card {
-      display: inline-flex;
+      display: flex;
+      width: 316px;
+      height: 357px;
       padding: 8px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 2px;
+      gap: 8px;
       border-radius: 4px;
       border: 1px solid #595959;
       background: #F5F5F5;
