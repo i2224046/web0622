@@ -1,0 +1,117 @@
+    /* ヘッダーのスタイル */
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* グローバルナビゲーションのスタイル */
+    nav {
+      background-color: #595959;
+      color: #fff;
+      padding: 16px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #f2f2f2;
+      /* ホバー時の色を指定 */
+    }
+
+    /* パンくずリストのスタイル */
+    nav:nth-of-type(2) {
+      background-color: #f2f2f2;
+      padding: 8px;
+    }
+
+    nav:nth-of-type(2) ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav:nth-of-type(2) ul li {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    nav:nth-of-type(2) ul li a:hover {
+      color: #595959;
+      /* ホバー時の色を指定 */
+    }
+
+    /* メインコンテンツとサイドバーのスタイル */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* フッターのスタイル */
+    footer {
+      background-color: #595959;
+      color: #fff;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* レスポンシブデザインのスタイル */
+    @media screen and (max-width: 768px) {
+      nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+
+      nav:nth-of-type(2) ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      section,
+      aside {
+        flex: auto;
+      }
+    }
+
+    /* Figmaのカードタイプ */
+    .card {
+      display: inline-flex;
+      padding: 8px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+      border-radius: 4px;
+      border: 1px solid #595959;
+      background: #F5F5F5;
+    }
